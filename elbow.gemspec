@@ -12,10 +12,10 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "elbow"
+  gem.name          = "psu-elbow"
   gem.require_paths = ["lib"]
   gem.version       = Elbow::VERSION
-  gem.add_dependency('aws-sdk')
+  gem.add_dependency('aws-sdk-v1')
   gem.add_dependency('net-dns')
 
 end
